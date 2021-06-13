@@ -10,7 +10,9 @@ export const Background = styled.div`
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.35)
     ),
-    url("../images/misc/home-bg.jpg") top left / cover no-repeat;
+    url(${({ src }) =>
+        src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
+      top left / cover no-repeat;
 
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) =>
@@ -54,6 +56,7 @@ export const Group = styled.div`
 export const SearchInput = styled.input`
   background-color: rgba(64, 64, 64, 0.5);
   color: white;
+  margin-right: 30px;
   border: 1px solid white;
   transition: width 0.5s;
   height: 30px;
@@ -82,6 +85,7 @@ export const Search = styled.div`
 
 export const SearchIcon = styled.button`
   cursor: pointer;
+  margin-right: 30px;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -103,6 +107,7 @@ export const ButtonLink = styled(ReachRouterLink)`
   width: 50px;
   height: fit-content;
   color: white;
+  font-weight: 600;
   border: 0;
   font-size: 15px;
   border-radius: 3px;
@@ -201,6 +206,7 @@ export const Logo = styled.img`
   height: 36px;
   width: 134px;
   margin-right: 40px;
+  margin-top: 20px;
   @media (min-width: 1449px) {
     height: 45px;
     width: 167px;
