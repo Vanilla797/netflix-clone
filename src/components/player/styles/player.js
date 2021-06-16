@@ -69,6 +69,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   color: white;
+  text-align: center;
   font-size: 18px;
   height: 45px;
   cursor: pointer;
@@ -76,6 +77,7 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   padding-left: 0;
+  border-radius: 5px;
 
   &:hover {
     transform: scale(1.05);
