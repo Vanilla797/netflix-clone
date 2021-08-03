@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 export const Container = styled.div``;
 
@@ -47,7 +47,7 @@ export const Close = styled.button`
     position: absolute;
     left: 10px;
     top: 0;
-    content: " ";
+    content: ' ';
     height: 22px;
     width: 2px;
     background-color: #333;
@@ -69,7 +69,6 @@ export const Button = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  text-align: center;
   font-size: 18px;
   height: 45px;
   cursor: pointer;
@@ -77,7 +76,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   padding-left: 0;
-  border-radius: 5px;
 
   &:hover {
     transform: scale(1.05);

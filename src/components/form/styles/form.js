@@ -1,10 +1,10 @@
-import styled from "styled-components/macro";
-import { Link as ReactRouterLink } from "react-router-dom";
+import styled from 'styled-components/macro';
+import { Link as ReachRouterLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 460px;
+  min-height: 660px;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   width: 100%;
@@ -50,7 +50,7 @@ export const TextSmall = styled.p`
   color: #8c8c8c;
 `;
 
-export const Link = styled(ReactRouterLink)`
+export const Link = styled(ReachRouterLink)`
   color: #fff;
   text-decoration: none;
 

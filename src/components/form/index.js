@@ -1,47 +1,38 @@
-import React from "react";
-import {
-  Container,
-  Error,
-  Title,
-  Text,
-  TextSmall,
-  Link,
-  Input,
-  Submit,
-  Base,
-} from "./styles/form";
+import React from 'react';
+import { Container, Error, Base, Title, Text, TextSmall, Link, Input, Submit } from './styles/form';
 
-function Form({ children, ...restProps }) {
+export default function Form({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
-export default Form;
-
-Form.Error = function FromError({ children, ...restProps }) {
+Form.Error = function FormError({ children, ...restProps }) {
   return <Error {...restProps}>{children}</Error>;
 };
 
-Form.Base = function FromBase({ children, ...restProps }) {
+Form.Base = function FormBase({ children, ...restProps }) {
   return <Base {...restProps}>{children}</Base>;
 };
-Form.Title = function FromTitle({ children, ...restProps }) {
+
+Form.Title = function FormTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Form.Text = function FromText({ children, ...restProps }) {
+Form.Text = function FormText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
-Form.TextSmall = function FromTextSmall({ children, ...restProps }) {
+
+Form.TextSmall = function FormTextSmall({ children, ...restProps }) {
   return <TextSmall {...restProps}>{children}</TextSmall>;
 };
-Form.Link = function FromLink({ children, ...restProps }) {
+
+Form.Link = function FormLink({ children, ...restProps }) {
   return <Link {...restProps}>{children}</Link>;
 };
 
-Form.Input = function FromInput({ children, ...restProps }) {
+Form.Input = function FormInput({ children, ...restProps }) {
   return <Input {...restProps}>{children}</Input>;
 };
 
-Form.Submit = function FromSubmit({ children, ...restProps }) {
+Form.Submit = function FormSubmit({ children, ...restProps }) {
   return <Submit {...restProps}>{children}</Submit>;
 };

@@ -1,10 +1,10 @@
-import React from "react";
-import { Footer } from "../components/index";
+import React from 'react';
+import { Footer } from '../components';
 
 export function FooterContainer() {
   return (
     <Footer>
-      <Footer.Title>Questions? Contact us</Footer.Title>
+      <Footer.Title>Questions? Contact us.</Footer.Title>
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
@@ -37,7 +37,6 @@ export function FooterContainer() {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Netflix </Footer.Text>
     </Footer>
   );
 }
